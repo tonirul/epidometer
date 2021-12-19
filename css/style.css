@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    
+  }
+
+  
+/********************************* navigation part start here ***********************************************/
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: #f2f2f2;
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Poppins', sans-serif;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 27px;
+    padding-left: 25px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/****************************************** Navigation part finish here *********************************************/
+
+
+/***************************************carousel part start here ***************************/
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width:25%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 75%;
+    background-color: url("../image/bg5.jpg");
+    repeat: no-repeat;
+    padding-left: 20px;
+  }
+  /****************** Swiping flag logo start here ********************/
+  
+  /************************* FLAG SECTION START**********************/
+  .swiper-container {
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0px;
+    background-image: url("bg2.jpg");
+    opacity:1;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+  }
+  
+  .swiper-slide {
+      margin: 0 auto;
+      border-radius: 0px;
+      background-position: center;
+      background-size: cover;
+      opacity: 1;
+      width: 150px;
+      height: 75px;
+      box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.75);
+  }
+  /******************************image section ******************************/
+  
+          .swiper-slide:nth-child(1){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Afghanistan.png)}
+          .swiper-slide:nth-child(1){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Afghanistan.png)}
+          .swiper-slide:nth-child(2){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Albania.png)}
+          .swiper-slide:nth-child(3){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Algeria.png)}
+          .swiper-slide:nth-child(4){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Andorra.png)}
+          .swiper-slide:nth-child(5){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Angola.png)}
+          .swiper-slide:nth-child(6){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Antigua.png)}
+          .swiper-slide:nth-child(7){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Argentina.png)}
+          .swiper-slide:nth-child(8){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Armenia.png)}
+          .swiper-slide:nth-child(9){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Australia.png)}
+          .swiper-slide:nth-child(10){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Austria.png)}
+          .swiper-slide:nth-child(11){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Azerbaijan.png)}
+          .swiper-slide:nth-child(12){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Bahamas.png)}
+          .swiper-slide:nth-child(13){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Bahrain.png)}
+          .swiper-slide:nth-child(14){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Bangladesh.png)}
+          .swiper-slide:nth-child(15){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Barbados.png)}
+          .swiper-slide:nth-child(16){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Belarus.png)}
+          .swiper-slide:nth-child(17){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Belgium.png)}
+          .swiper-slide:nth-child(18){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Belize.png)}
+          .swiper-slide:nth-child(19){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Benin.png)}
+          .swiper-slide:nth-child(20){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Bhutan.png)}
+          .swiper-slide:nth-child(21){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Bolivia.png)}
+          .swiper-slide:nth-child(22){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Bosnia-Herzegovina.png)}
+          .swiper-slide:nth-child(23){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Botswana.png)}
+          .swiper-slide:nth-child(24){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Brazil.png)}
+          .swiper-slide:nth-child(25){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Brunei.png)}
+          .swiper-slide:nth-child(26){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Bulgaria.png)}
+          .swiper-slide:nth-child(27){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Burkina-Faso.png)}
+          .swiper-slide:nth-child(28){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Burundi.png)}
+          .swiper-slide:nth-child(29){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Cabo-Verde.png)}
+          .swiper-slide:nth-child(30){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Cambodia.png)}
+          .swiper-slide:nth-child(31){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Cameroon.png)}
+          .swiper-slide:nth-child(32){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Canada.png)}
+          .swiper-slide:nth-child(33){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Central-African-Republic.png)}
+          .swiper-slide:nth-child(34){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Chad.png)}
+          .swiper-slide:nth-child(35){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Chile.png)}
+          .swiper-slide:nth-child(36){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-China.png)}
+          .swiper-slide:nth-child(37){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Colombia.png)}
+          .swiper-slide:nth-child(38){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Comoros.png)}
+          .swiper-slide:nth-child(39){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Congo-Democratic-Republic-of.png)}
+          .swiper-slide:nth-child(40){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Congo.png)}
+          .swiper-slide:nth-child(41){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Costa-Rica.png)}
+          .swiper-slide:nth-child(42){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Cote-d-Ivoire.png)}
+          .swiper-slide:nth-child(43){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Croatia.png)}
+          .swiper-slide:nth-child(44){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Cuba.png)}
+          .swiper-slide:nth-child(45){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Cyprus.png)}
+          .swiper-slide:nth-child(46){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Czech-Republic.png)}
+          .swiper-slide:nth-child(47){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Denmark.png)}
+          .swiper-slide:nth-child(48){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Djibouti.png)}
+          .swiper-slide:nth-child(49){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Dominica.png)}
+          .swiper-slide:nth-child(50){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Dominican-Republic.png)}
+          .swiper-slide:nth-child(51){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Ecuador.png)}
+          .swiper-slide:nth-child(52){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Egypt.png)}
+          .swiper-slide:nth-child(53){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-El-Salvador.png)}
+          .swiper-slide:nth-child(54){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Equatorial-Guinea.png)}
+          .swiper-slide:nth-child(55){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Eritrea.png)}
+          .swiper-slide:nth-child(56){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Estonia.png)}
+          .swiper-slide:nth-child(57){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Eswatini.png)}
+          .swiper-slide:nth-child(58){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Ethiopia.png)}
+          .swiper-slide:nth-child(59){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Fiji.png)}
+          .swiper-slide:nth-child(60){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Finland.png)}
+          .swiper-slide:nth-child(61){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-France.png)}
+          .swiper-slide:nth-child(62){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Gabon.png)}
+          .swiper-slide:nth-child(63){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Gambia.png)}
+          .swiper-slide:nth-child(64){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Georgia.png)}
+          .swiper-slide:nth-child(65){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Germany.png)}
+          .swiper-slide:nth-child(66){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Ghana.png)}
+          .swiper-slide:nth-child(67){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Greece.png)}
+          .swiper-slide:nth-child(68){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Grenada.png)}
+          .swiper-slide:nth-child(69){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Guatemala.png)}
+          .swiper-slide:nth-child(70){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Guinea.png)}
+          .swiper-slide:nth-child(71){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Guinea-Bissau.png)}
+          .swiper-slide:nth-child(72){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Guyana.png)}
+          .swiper-slide:nth-child(73){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Haiti.png)}
+          .swiper-slide:nth-child(74){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Honduras.png)}
+          .swiper-slide:nth-child(75){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Hungary.png)}
+          .swiper-slide:nth-child(76){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Iceland.png)}
+          .swiper-slide:nth-child(77){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-India.png)}
+          .swiper-slide:nth-child(78){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Indonesia.png)}
+          .swiper-slide:nth-child(79){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Iran.png)}
+          .swiper-slide:nth-child(80){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Iraq.png)}
+          .swiper-slide:nth-child(81){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Ireland.png)}
+          .swiper-slide:nth-child(82){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Israel.png)}
+          .swiper-slide:nth-child(83){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Italy.png)}
+          .swiper-slide:nth-child(84){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Jamaica.png)}
+          .swiper-slide:nth-child(85){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Japan.png)}
+          .swiper-slide:nth-child(86){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Jordan.png)}
+          .swiper-slide:nth-child(87){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Kazakhstan.png)}
+          .swiper-slide:nth-child(88){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Kenya.png)}
+          .swiper-slide:nth-child(89){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Kiribati.png)}
+          .swiper-slide:nth-child(90){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Kosovo.png)}
+          .swiper-slide:nth-child(91){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Kuwait.png)}
+          .swiper-slide:nth-child(92){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Kyrgyzstan.png)}
+          .swiper-slide:nth-child(93){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Laos.png)}
+          .swiper-slide:nth-child(94){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Latvia.png)}
+          .swiper-slide:nth-child(95){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Lebanon.png)}
+          .swiper-slide:nth-child(96){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Lesotho.png)}
+          .swiper-slide:nth-child(97){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Liberia.png)}
+          .swiper-slide:nth-child(98){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Libya.png)}
+          .swiper-slide:nth-child(99){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Liechtenstein.png)}
+          .swiper-slide:nth-child(100){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Lithuania.png)}
+          .swiper-slide:nth-child(101){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Luxembourg.png)}
+          .swiper-slide:nth-child(102){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Madagascar.png)}
+          .swiper-slide:nth-child(103){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Malawi.png)}
+          .swiper-slide:nth-child(104){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Malaysia.png)}
+          .swiper-slide:nth-child(105){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Maldives.png)}
+          .swiper-slide:nth-child(106){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Mali.png)}
+          .swiper-slide:nth-child(107){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Malta.png)}
+          .swiper-slide:nth-child(108){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Marshall-Islands.png)}
+          .swiper-slide:nth-child(109){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Mauritania.png)}
+          .swiper-slide:nth-child(110){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Mauritius.png)}
+          .swiper-slide:nth-child(111){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Mexico.png)}
+          .swiper-slide:nth-child(112){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Micronesia.png)}
+          .swiper-slide:nth-child(113){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Moldova.png)}
+          .swiper-slide:nth-child(114){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Monaco.png)}
+          .swiper-slide:nth-child(115){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Mongolia.png)}
+          .swiper-slide:nth-child(116){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Montenegro.png)}
+          .swiper-slide:nth-child(117){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Morocco.png)}
+          .swiper-slide:nth-child(118){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Mozambique.png)}
+          .swiper-slide:nth-child(119){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Myanmar.png)}
+          .swiper-slide:nth-child(120){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Namibia.png)}
+          .swiper-slide:nth-child(121){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Nauru.png)}
+          .swiper-slide:nth-child(122){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Nepal.png)}
+          .swiper-slide:nth-child(123){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Netherlands.png)}
+          .swiper-slide:nth-child(124){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-New-Zealand.png)}
+          .swiper-slide:nth-child(125){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Nicaragua.png)}
+          .swiper-slide:nth-child(126){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Niger.png)}
+          .swiper-slide:nth-child(127){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Nigeria.png)}
+          .swiper-slide:nth-child(128){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Korea-North.png)}
+          .swiper-slide:nth-child(129){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-North-Macedonia.png)}
+          .swiper-slide:nth-child(130){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Norway.png)}
+          .swiper-slide:nth-child(131){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Oman.png)}
+          .swiper-slide:nth-child(132){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Pakistan.png)}
+          .swiper-slide:nth-child(133){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Palau.png)}
+          .swiper-slide:nth-child(134){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Palestine.png)}
+          .swiper-slide:nth-child(135){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Panama.png)}
+          .swiper-slide:nth-child(136){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Papua-New-Guinea.png)}
+          .swiper-slide:nth-child(137){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Paraguay.png)}
+          .swiper-slide:nth-child(138){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Peru.png)}
+          .swiper-slide:nth-child(139){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Philippines.png)}
+          .swiper-slide:nth-child(140){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Poland.png)}
+          .swiper-slide:nth-child(141){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Portugal.png)}
+          .swiper-slide:nth-child(142){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Qatar.png)}
+          .swiper-slide:nth-child(143){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Romania.png)}
+          .swiper-slide:nth-child(144){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Russia.png)}
+          .swiper-slide:nth-child(145){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Rwanda.png)}
+          .swiper-slide:nth-child(146){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-St-Kitts-Nevis.png)}
+          .swiper-slide:nth-child(147){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-St-Lucia.png)}
+          .swiper-slide:nth-child(148){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-St-Vincent-the-Grenadines.png)}
+          .swiper-slide:nth-child(149){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Samoa.png)}
+          .swiper-slide:nth-child(150){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-San-Marino.png)}
+          .swiper-slide:nth-child(151){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Sao-Tome-and-Principe.png)}
+          .swiper-slide:nth-child(152){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Saudi-Arabia.png)}
+          .swiper-slide:nth-child(153){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Senegal.png)}
+          .swiper-slide:nth-child(154){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Serbia.png)}
+          .swiper-slide:nth-child(155){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Seychelles.png)}
+          .swiper-slide:nth-child(156){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Sierra-Leone.png)}
+          .swiper-slide:nth-child(157){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Singapore.png)}
+          .swiper-slide:nth-child(158){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Slovakia.png)}
+          .swiper-slide:nth-child(159){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Slovenia.png)}
+          .swiper-slide:nth-child(160){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Solomon-Islands.png)}
+          .swiper-slide:nth-child(161){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Somalia.png)}
+          .swiper-slide:nth-child(162){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-South-Africa.png)}
+          .swiper-slide:nth-child(163){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Korea-South.png)}
+          .swiper-slide:nth-child(164){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-South-Sudan.png)}
+          .swiper-slide:nth-child(165){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Spain.png)}
+          .swiper-slide:nth-child(166){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Sri-Lanka.png)}
+          .swiper-slide:nth-child(167){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Sudan.png)}
+          .swiper-slide:nth-child(168){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Suriname.png)}
+          .swiper-slide:nth-child(169){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Sweden.png)}
+          .swiper-slide:nth-child(170){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Switzerland.png)}
+          .swiper-slide:nth-child(171){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Syria.png)}
+          .swiper-slide:nth-child(172){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Taiwan.png)}
+          .swiper-slide:nth-child(173){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Tajikistan.png)}
+          .swiper-slide:nth-child(174){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Tanzania.png)}
+          .swiper-slide:nth-child(175){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Thailand.png)}
+          .swiper-slide:nth-child(176){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Timor-Leste.png)}
+          .swiper-slide:nth-child(177){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Togo.png)}
+          .swiper-slide:nth-child(178){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Tonga.png)}
+          .swiper-slide:nth-child(179){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Trinidad-and-Tobago.png)}
+          .swiper-slide:nth-child(180){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Tunisia.png)}
+          .swiper-slide:nth-child(181){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Turkey.png)}
+          .swiper-slide:nth-child(182){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Turkmenistan.png)}
+          .swiper-slide:nth-child(183){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Tuvalu.png)}
+          .swiper-slide:nth-child(184){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Uganda.png)}
+          .swiper-slide:nth-child(185){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Ukraine.png)}
+          .swiper-slide:nth-child(186){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-United-Arab-Emirates.png)}
+          .swiper-slide:nth-child(187){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-United-Kingdom.png)}
+          .swiper-slide:nth-child(188){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png)}
+          .swiper-slide:nth-child(189){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Uruguay.png)}
+          .swiper-slide:nth-child(190){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Uzbekistan.png)}
+          .swiper-slide:nth-child(191){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Vanuatu.png)}
+          .swiper-slide:nth-child(192){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Vatican-City.png)}
+          .swiper-slide:nth-child(193){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Venezuela.png)}
+          .swiper-slide:nth-child(194){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Vietnam.png)}
+          .swiper-slide:nth-child(195){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Yemen.png)}
+          .swiper-slide:nth-child(196){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Zambia.png)}
+          .swiper-slide:nth-child(197){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Zimbabwe.png)}
+          .swiper-slide:nth-child(197){ background-image: url(https://www.countries-ofthe-world.com/flags-normal/flag-of-Zimbabwe.png)}
+  
+  /****************** Swiping flag logo finish here *******************/
+  /**************** VERTICAL SCROLL BAR START**********************/
+  
+  .vertical-menu {
+      z-index: 1;
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+      border-radius: 0px;
+      background: #ffe6ff;
+      opacity: 1;
+      padding: 12px 15px 20px 15px;
+     overflow-y: auto;
+  }
+  
+  #myInput {
+    background-image: #ffffff;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px ;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  #myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+  
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  #myTable tr {
+    border-bottom: none;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    background-color: #ddd;
+  }
+  
+  /**************** VERTICAL SCROLL BAR FINISH**********************/
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 8%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    color: Black;
+    box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.75);
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /*************COVID DATA SECTION START ***************/
+  
+  .box {
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+      border-radius: 10px;
+      background: #ffe6ff;
+      opacity: 1;
+      padding: 21px;
+      box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.75);
+  }
+  .board {
+      column-count: 3;
+      column-gap: 1rem;
+  }
+  .box h2 {
+      font-size: 27px;
+      margin: 0 0 15px;
+      text-align: center;
+  }
+  img#flag {
+      height: 20px;
+      width: 30px;
+      padding-right: 5px;
+  }
+  
+  img#logo {
+      height: 35px;
+      width: 35px;
+  
+  }
+  .covid {
+      width: 100%;
+      background: #ccc;
+      opacity: 0.8;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      color: #fff;
+      box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.75);
+  }
+  .covid.ac {
+      background: #41a7ff;
+  }
+  .covid.cc {
+      background: #ff3434;
+  }
+  .covid.rc {
+      background: #32b336;
+  }
+  .covid.tc {
+      background: #d83f3f;
+  }
+  .covid.td {
+      background: #ff0053;
+  }
+  .covid.ttd {
+      background: #ffa501;
+  }
+  .covid h5 {
+      margin: 0;
+      font-size: 1rem;
+  }
+  .covid span {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+  }
+  .covid i {
+      font-size: 1.5rem;
+  }
+  @media screen and (max-width: 768px){
+    .board {
+      column-count: 2;
+    }
+    .covid span {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 500px){
+    .board {
+      column-count: 1;
+    }
+  }
+  
+  /*******************  COVID DATA SECTION END ***********/
+  
+  
+  /* Footer */
+  .footer {
+    padding: 5px;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    background: black;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+
